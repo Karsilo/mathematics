@@ -1,0 +1,112 @@
+---
+title: 3. Bernoulli's ODE
+description: -----
+---
+
+A first-order differential equation that can be transformed into a linear equation by a suitable change of variables.
+
+$$
+\dfrac{dy}{dx} + f(x)y = g(x)y^n \quad \text{where} \quad n \neq 0, 1 \quad y(0) = 1
+$$
+
+### How to solve
+
+Convert to linear ODE
+
+$$
+\begin{equation}
+y^{-n}\dfrac{dy}{dx} + f(x)y^{1-n} = g(x) 
+\end{equation}
+$$
+
+we need the $\; y^{1-n} \;$ term to be linear so set
+
+$$
+z = y^{1-n}, \quad y = z^{\textstyle \frac{1}{1 - n}}, \quad \dfrac{dz}{dy} = (1 - n)y^{-n}
+$$
+
+we will also need
+
+$$
+\dfrac{dz}{dx} = \dfrac{d(y^{1 - n})}{dx} = (1 - n)y^{-n}\dfrac{dy}{dx}
+$$
+
+note the expression $\; y^{-n}\dfrac{dy}{dx} \;$ in the above equation is the same as the first term in $(1)$
+
+lets solve for this term
+
+$$
+y^{-n}\dfrac{dy}{dx} = \dfrac{1}{1 - n}\dfrac{dz}{dx}
+$$
+
+now lets get rid of all the $y$ terms in $(1)$ by subbing in $\; \dfrac{1}{1 - n}\dfrac{dz}{dx} \;$ and $\; z = y^{1 - n} \;$
+
+this gives us
+
+$$
+\dfrac{1}{1 - n}\dfrac{dz}{dx} + f(x)z = g(x)
+$$
+
+<p style={{ marginBottom: '0.5em' }}></p>
+
+$$
+\boxed{\dfrac{dz}{dx} + (1 - n)f(x)z = (1 - n)g(x)}
+$$
+
+this is in the same form as a first order ODE.
+
+**Note:** it can be useful to memorise this equation
+
+
+### Example
+
+Solve
+
+$$
+\dfrac{dy}{dx} + y = xy^3 \quad \text{where} \quad y(0) = 1
+$$
+
+#### Answer
+
+$n = 3, \quad z = y^{-2}, \quad y = z^{- \textstyle \frac{1}{2}}, \quad f(x) = 1, \quad g(x) = x$
+
+Sub into **Bernoulli's ODE**
+
+$$
+\dfrac{dz}{dx} -2z = -2x
+$$
+
+Solve for integrating factor (IF)
+
+$$
+\mu(x) = e^{\textstyle \int{-2 \, \; dx}} = e^{-2x}
+$$
+
+multiply ODE by $\mu(x)$
+
+$$
+e^{-2x}\dfrac{dz}{dx} -2ze^{-2x} = xe^{-2x}
+$$
+
+integrate both sides
+
+$$
+z = x + \frac{1}{2} + Ce^{2x}
+$$
+
+so 
+
+$$
+y = (x + \frac{1}{2} + Ce^{2x})^{- \textstyle \frac{1}{2}}
+$$
+
+since $\; y(0) = 1$, $\; C = \dfrac{1}{2}$
+
+therefore
+
+$$
+y = (x + \frac{1}{2} + \frac{1}{2}e^{2x})^{- \textstyle \frac{1}{2}}
+$$
+&nbsp;
+
+&nbsp;

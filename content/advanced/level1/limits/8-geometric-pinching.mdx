@@ -1,0 +1,101 @@
+---
+title: 8. Geometric Pinching 
+description: -----
+---
+
+Proving that 
+
+$$
+\lim_{x \to 0} \dfrac{\sin(x)}{x} = 1
+$$
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/advanced/limits/geometric-pinching.jpg"
+    alt="Geometric Pinching "
+    width={400}
+    style={{borderRadius: 5}}
+  />
+</div>
+
+where circular arc $AP$ is centered about $O$ with radius $1$ and $\angle{AOQ} = x$, $0 < x < \dfrac{\pi}{2}$
+
+we know that
+
+$$
+OA = 1
+$$
+
+so 
+
+$$
+\tan(x) = \dfrac{QA}{1}, \quad QA = \tan(x)
+$$
+
+calculating area $\Delta OAP$
+
+$$
+\text{area} = \dfrac{1}{2}ab\sin(x) = \dfrac{1}{2}(1)(1)\sin(x) = \dfrac{1}{2}\sin(x) \\
+
+\; \\
+
+\Delta \text{OAP} = \dfrac{1}{2}\sin(x)
+$$
+
+calculating area sector $OAP$
+
+$$
+\text{area} = \dfrac{1}{2}r^2x = \dfrac{1}{2}x \\
+
+\; \\
+
+\text{OAP} = \dfrac{1}{2}x
+$$
+
+calculating area $\Delta OAQ$
+
+$$
+\text{area} = \dfrac{1}{2}bh = \dfrac{1}{2}(1)(\tan(x)) = \dfrac{1}{2}\tan(x) \\
+
+\; \\
+
+\Delta\text{OAQ} = \dfrac{1}{2}\tan(x)
+$$
+
+since $\Delta OAP < OAP < \Delta OAQ$
+
+$$
+\dfrac{1}{2}\sin(x) < \dfrac{1}{2}x < \dfrac{1}{2}\tan(x) \\
+
+\; \\
+
+\sin(x) < x < \tan(x)
+$$
+
+divide all parts by $\sin(x)$
+
+$$
+1 < \dfrac{x}{\sin(x)} < \dfrac{1}{\cos(x)}
+$$
+
+take the reciprical of all parts
+
+$$
+1 > \dfrac{\sin(x)}{x} > \cos(x), \quad 0 < x < \dfrac{\pi}{2}
+$$
+
+since 
+
+$$
+\lim_{x \to 0} \cos(x) = 1
+$$
+
+this now follows the Pinching Theorem and therefore
+
+$$
+\boxed{\lim_{x \to 0} \dfrac{\sin(x)}{x} = 1}
+$$
+
+&nbsp;
+
+&nbsp;

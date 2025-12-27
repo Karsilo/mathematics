@@ -1,0 +1,13 @@
+{
+  "title": "Level 1",
+  "pages": [
+    "vectors-kinematics",
+    "complex-numbers",
+    "polar-coordinates",
+    "limits",
+    "group-theory",
+    "odes",
+    "fourier-series",
+    "complex-analysis"
+  ]
+}

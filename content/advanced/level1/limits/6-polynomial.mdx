@@ -1,0 +1,41 @@
+---
+title: 6. Polynomial
+description: -----
+---
+
+How to take the limit with one polynomial over another when the limit looks like it will be $\dfrac{0}{0}$
+
+### Example
+
+$$
+\lim_{0 \to 3} \dfrac{x^2 - 9}{x^3 - 27}
+$$
+
+#### Answer
+
+Factorise 
+
+$$
+x^2 - 9 = (x + 3)(x - 3)
+$$
+
+$$
+x^3 - 27 = (x - 3)(x^2 + 3x + 9)
+$$
+
+since $x \neq 3$
+
+$$
+\dfrac{x^2 - 9}{x^3 - 27} = \dfrac{x - 3}{x^2 + 3x + 9}
+$$
+
+therefore
+
+$$
+\lim_{x \to 3} \dfrac{x - 3}{x^2 + 3x + 9} = \dfrac{3 + 3}{9 + 9 + 9} = \boxed{\dfrac{2}{9}}
+$$
+
+
+&nbsp;
+
+&nbsp;

@@ -1,0 +1,61 @@
+---
+title: 4. Case 2 - No Limit
+description: -----
+---
+
+### Case 2
+
+Find the $\delta$ & $\epsilon$ that satisfies 
+
+$$
+\lim_{x \to 0} \;
+f(x) = 
+\begin{cases}
+1 + x, & \text{if } x \ge 0,\\
+-1 + x, & \text{if } x < 0
+\end{cases}
+$$
+
+#### Answer
+
+As $x$ approaches $0$ from above $f(x)$ tends to $+1$
+
+As $x$ approaches $0$ from below $f(x)$ tends to $-1$
+
+If we pick a random value for $\epsilon$ say $\epsilon = 10^{-4}$ then
+
+$$
+|f(x) - L| < 10^{-4}
+$$
+
+**Case 1:** $x \ge 0$
+
+$$
+|(1 + x) - L| < 10^{-4}
+$$
+
+Here $L$ would have to be the limit as $x \to 0$ . For $x \ge 0$, the function tends to 1, so 
+
+$$
+|1 + x - 1| < 10^{-4} \quad \to \quad 0 \le x < 10^{-4}
+$$
+
+this approach works 
+
+**Case 2:** $x < 0$
+
+$$
+|(-1 + x) - L| < 10^{-4}
+$$
+
+if we try to pick $L = 1$ (the right hand limit), then
+
+$$
+|-2 + x| \gg 10^{-4}
+$$
+
+therefore no mater how small we pick $\delta$, we cannot satisy the condition for $x < 0$
+
+&nbsp;
+
+&nbsp;

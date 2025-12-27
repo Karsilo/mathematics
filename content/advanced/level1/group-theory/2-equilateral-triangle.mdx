@@ -1,0 +1,122 @@
+---
+title: 2. Equilateral Triangle
+description: -----
+---
+
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/advanced/group-theory/equilateral-triangle.jpg"
+    alt="Equilateral triangle"
+    width={400}
+    style={{borderRadius: 5}}
+  />
+</div>
+
+
+### Representation
+
+This can be represented by a Triple
+
+$$
+(a, b, c)
+$$
+
+where $a$ is the top, $b$ is the bottom left, and $c$ is the bottom right
+
+&nbsp;
+
+### Rotation ($r$)
+
+$$
+r = \dfrac{2\pi}{3}
+$$
+
+where $r$ is an anti-clockwise rotation through an angle $\dfrac{2\pi}{3}$ about the centre
+
+&nbsp;
+
+#### Applying $r$
+
+$$
+1 \mapsto 2, \quad 2 \mapsto 3, \quad 3 \mapsto 1
+$$
+
+the triangle $(1, 2, 3)$ is transformed to $(3, 1, 2)$
+
+&nbsp;
+
+#### Applying $r^2$
+
+$$
+1 \mapsto 3, \quad 2 \mapsto 1, \quad 3 \mapsto 2
+$$
+
+the triangle $(1, 2, 3)$ is transformed to $(2, 3, 1)$
+
+&nbsp;
+
+#### Applying $r^3$
+
+$$
+r \circ r \circ r = r^3 = Id
+$$
+
+where $Id$ is the **identity transformation**
+
+&nbsp;
+
+
+### Reflection ($s, t, u$)
+
+- Let ($s$) be a reflection for $A_s$
+
+- Let ($t$) be a reflection for $A_t$
+
+- Let ($u$) be a reflection for $A_u$
+
+&nbsp;
+
+#### Reflection ($s$)
+
+$$
+1 \mapsto 1, \quad 2 \mapsto 3, \quad 3 \mapsto 2
+$$
+
+the triangle $(1, 2, 3)$ is transformed to $(1, 3, 2)$
+
+$$
+s^2 = Id
+$$
+
+&nbsp;
+
+#### Reflection ($t$)
+
+$$
+1 \mapsto 3, \quad 2 \mapsto 2, \quad 3 \mapsto 1
+$$
+
+the triangle $(1, 2, 3)$ is transformed to $(3, 2, 1)$
+
+$$
+t^2 = Id
+$$
+
+&nbsp;
+
+#### Reflection ($u$)
+
+$$
+1 \mapsto 2, \quad 2 \mapsto 1, \quad 3 \mapsto 3
+$$
+
+the triangle $(1, 2, 3)$ is transformed to $(2, 1, 3)$
+
+$$
+u^2 = Id
+$$
+
+&nbsp;
+
+&nbsp;

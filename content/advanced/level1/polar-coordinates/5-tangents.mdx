@@ -1,0 +1,107 @@
+---
+title: 5. Tangents
+description: -----
+---
+
+Tangent **parallel** to the initial line $\dfrac{dy}{d\theta} = 0$
+
+Tangent **perpendicular** to the initial line $\dfrac{dx}{d\theta} = 0$
+
+### Example
+
+Find the equation of the tangent to the curve $r = a\sin 2\theta$ parallel to the initial line 
+
+where $0 \leq \theta \leq \dfrac{\pi}{2}$
+
+#### Answer
+
+when $\dfrac{dy}{d\theta} = 0$
+
+$$
+r\sin \theta = y
+$$
+
+so
+
+$$
+y = a\sin \theta \sin 2\theta
+$$
+
+using double angle formula
+
+$$
+y = 2a\sin^2 \theta \cos \theta = 2a(\cos \theta - \cos^3 \theta)
+$$
+
+differentiate
+
+$$
+\dfrac{dy}{d\theta} = 2a(-\sin \theta + 3\sin \theta \cos^2 \theta)
+$$
+
+pull out $\sin \theta$
+
+$$
+\dfrac{dy}{d\theta} = 2a\sin\theta(3\cos^2 \theta - 1)
+$$
+
+for $\dfrac{dy}{d\theta} = 0$ both
+
+$$
+\sin \theta = 0, \quad \quad \cos^2 \theta = \dfrac{1}{3}
+$$
+
+looking at $\sin \theta = 0$
+
+$$
+\theta = 0, \quad \quad r = 0
+$$
+
+this isn't a solution since $r > 0$
+
+looking at $\cos^2 \theta = \dfrac{1}{3}$
+
+$$
+\cos \theta = \dfrac{1}{\sqrt{3 }}, \quad \quad \sin \theta = \dfrac{\sqrt{2}}{\sqrt{3}}
+$$
+
+using double angle formula for $r = a \sin 2\theta$
+
+$$
+r = 2a\sin \theta \cos \theta
+$$
+
+subbing in $\sin \theta$ and $\cos \theta$
+
+$$
+r = 2a \cdot \dfrac{\sqrt{2}}{\sqrt{3}} \cdot \dfrac{1}{\sqrt{3}} = \dfrac{2a \sqrt{2}}{3}
+$$
+
+if you plot this you will get a circle which intersects $r = a\sin \theta$ at the tangent points
+
+now since $y = r\sin \theta$
+
+$$
+y = \dfrac{2a \sqrt{2}}{3} \cdot \dfrac{\sqrt{2}}{\sqrt{3}} = \dfrac{4a}{3\sqrt{3}}
+$$
+
+now to get the equation of the tangent we sub $y$ into $r = \dfrac{y}{sin\theta}$
+
+$$
+r = \dfrac{4a}{3\sqrt{3}} \cosec \theta
+$$
+
+on a graph this looks like
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img
+    src="/advanced/polar-coordinates/tangents.jpg"
+    alt="Tangents Image"
+    width={400}
+    style={{borderRadius: 5}}
+  />
+</div>
+
+&nbsp;
+
+&nbsp;

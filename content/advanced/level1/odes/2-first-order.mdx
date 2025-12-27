@@ -1,0 +1,84 @@
+---
+title: 2. 1st Order
+description: -----
+---
+
+A differential equation is a first order ODE if it contains a first derivative
+
+$$
+\dfrac{dy}{dx} + f(x)y = g(x)
+$$
+
+### How to solve
+
+Let the integrating factor (IF) be $\mu(x)$ such that multiplying both sides by $\mu(x)$ gives
+
+$$
+\mu(x)\dfrac{dy}{dx} + \mu(x)f(x)y = g(x)\mu(x)
+$$
+
+we want $\mu(x)$ to an equation such that
+
+$$
+\dfrac{d(\mu(x)y)}{dx} = \mu(x)\dfrac{dy}{dx} + \mu(x)f(x)y
+$$
+
+therefore by product rule we can say that 
+
+$$
+\mu'(x) = \mu(x)f(x), \quad f(x) = \dfrac{\mu'(x)}{\mu(x)}
+$$
+
+solving for $\mu(x)$
+
+$$
+ln(\mu(x)) = \int f(x) \; dx
+$$
+
+so
+
+$$
+\mu(x) = e^{\textstyle \int f(x)\, \; dx}
+$$
+
+Note: $f(x)$ isn't always integratable
+
+
+### Example
+
+Solve
+
+$$
+\dfrac{dy}{dx} + \dfrac{2xy}{x^2 - 1} = 5x^2 - 1
+$$
+
+#### Answer
+
+<p style={{ marginBottom: '0.5em' }}></p>
+
+$f(x) = \dfrac{2x}{x^2 -1}$, $\quad g(x) = 5x^2 - 1$
+
+$\mu(x) = e^{\textstyle \int \frac{2x}{x^2 - 1}\, \; dx} \quad = \quad e^{ln(x^2 - 1)} \quad = \quad x^2 - 1$
+
+multiply both sides of the ODE by $\mu(x)$
+
+$$
+(x^2 - 1)\dfrac{dy}{dx} + 2xy = (x^2 - 1)(5x^2 - 1)
+$$
+
+the left side of the equation can now be integrated easily
+
+$$
+(x^2 - 1)y = \int{5x^4 - 6x^2 + 1\, dx}
+$$
+
+therefore
+
+$$
+y = \dfrac{x^5 - 2x^3 + x + c}{x^2 - 1}
+$$
+
+
+&nbsp;
+
+&nbsp;

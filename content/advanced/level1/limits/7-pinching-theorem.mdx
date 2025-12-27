@@ -1,0 +1,68 @@
+---
+title: 7. Pinching Theorem
+description: -----
+---
+
+If a function is always trapped between two functions that approach the same limit at a point, then the trapped function must also approach that limit
+
+$$
+\lim_{x \to a} f(x)
+$$
+
+if we know that there exists two other functions $g(x)$ and $h(x)$ such that for all $x$ sufficiently close to $a$
+
+$$
+g(x) \leq f(x) \leq h(x)
+$$
+
+if the bounding functions have the same limit
+
+$$
+\lim_{x \to a} g(x) = L, \quad \lim_{x \to a} f(x) = L
+$$
+
+then $f(x)$ is forced to approach the same value, so
+
+$$
+\lim_{x \to a} f(x) = L
+$$
+
+&nbsp;
+
+### Example
+
+$$
+\lim_{x \to 0} x^2\sin(\dfrac{1}{x})
+$$
+
+#### Answer
+
+Let $t = \dfrac{1}{x}$ then for all real $t$
+
+$$
+-1 \leq \sin(t) \leq 1
+$$
+
+multiple all parts by $x^2$
+
+$$
+-x^2 \leq x^2\sin(\dfrac{1}{x}) \leq x^2
+$$
+
+take the limits of the bounding functions
+
+$$
+\lim_{x \to 0} -x^2 = 0, \quad \lim_{x \to 0} x^2 = 0
+$$
+
+since both bounds approach $0$ as $x \to 0$, the Pinching theorem implies
+
+
+$$
+\lim_{x \to 0} x^2\sin(\dfrac{1}{x}) = 0
+$$
+
+
+&nbsp;
+
+&nbsp;

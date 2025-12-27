@@ -1,0 +1,65 @@
+---
+title: 8. Maps Between Groups
+description: -----
+---
+
+Sometimes, two groups can be considered essentially the same even if they look different.
+
+### Example
+
+The subgroup $\{Id, r, r^2\}$ of $D_3$ is essentially the same as the cyclic group $\dfrac{\Z}{3}$
+
+We can define a map $\phi$ between their elements
+
+$$
+\phi :
+\begin{cases}
+Id \mapsto 0 \pmod{3} \\
+r \mapsto 1 \pmod{3} \\
+r^2 \mapsto 2 \pmod{3}
+\end{cases}
+$$
+
+Respects group operations
+
+$$
+\phi(r \circ r^2) = \phi(Id) = 0 
+$$
+
+$$
+1 + 2 \mod 3 = 0
+$$
+
+$$
+\phi(r) + \phi(r^2) = 0
+$$
+
+it can help to read through each operation slowly to grasp the idea
+
+&nbsp;
+
+## Homomorphisms
+
+Let $G$ and $H$ be groups with operations $\cdot_G$ and $\cdot_H$
+
+Let $\phi: G \to H$
+
+A function is a **homomorphism** if 
+
+$$
+\phi(x \cdot_G y) = \phi(x) \cdot_H \phi(y) \quad \text{for all } x, y \in G
+$$
+
+## Bijection
+
+A function that pairs each element of one set with exactly one element of another set, with no elements left unmatched in either set.
+
+## Isomorphsim
+
+If $\phi$ is also a bijection, it is called an **isomorphsim**, and $G$ and $H$ are said to be **isomorphic**
+
+Isomorphic groups have the **same structure**, even if their elements look different
+
+&nbsp;
+
+&nbsp;

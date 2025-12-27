@@ -1,0 +1,13 @@
+{
+    "title": "Group Theory",
+    "pages": [
+        "1-introduction",
+        "2-equilateral-triangle",
+        "3-composite-transformations",
+        "4-dihedral-group",
+        "5-finite-cyclic-groups",
+        "6-regular-polygons",
+        "7-subgroups",
+        "8-maps-between-groups"
+    ]
+}
