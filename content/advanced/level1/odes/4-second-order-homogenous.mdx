@@ -3,4 +3,108 @@ title: 4. 2nd Order Homogenous
 description: An ordinary differential equation (ODE) is an equation that relates a function of one variable to its derivatives with respect to that variable.
 ---
 
-#### Example 1 (Simple first order ODE)
+$$
+\begin{equation}
+ay'' + by + cy = 0
+\end{equation}
+$$
+
+&nbsp;
+
+We can guess a function of the form $y = e^{\lambda x}$ might satisfy our equation
+
+substitute $y = e^{\lambda x}$ into $(1)$
+
+$$
+a\lambda^2 e^{\lambda x} + b\lambda e^{\lambda x} + ce^{\lambda x} = 0
+$$
+
+factorise out $e^{\lambda x}$
+
+$$
+(a\lambda^2 + b\lambda + c)e^{\lambda x} = 0
+$$
+
+we define the brackets as our **Auxillary Equation**. This is true because $e^{\lambda x} \neq 0$
+
+$$
+(a\lambda^2 + b\lambda + c) = 0
+$$
+
+solving for $\lambda$
+
+$$
+\lambda_{\pm} = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+### Case 1
+
+when $b^2 -4ac \neq 0$
+
+this gives use two **Particular Solutions** for $y$
+
+$$
+y_1 = e^{\lambda_{+} x}, \quad \quad y_2 = e^{\lambda_{-} x}
+$$
+
+our **General Solution** is the sum of these times some constants
+
+$$
+y = \alpha y_1 + \beta y_2 = \alpha e^{\lambda_{+} x} + \beta e^{\lambda_{-} x} 
+$$
+
+&nbsp;
+
+### Case 2
+
+when $b^2 -4ac = 0$ then $\lambda_{\pm} =  \dfrac{-b}{2a}$ so $\lambda_{+} = \lambda_{-}$
+
+we can no longer take linear cominations of $y_1$ & $y_2$, since 
+
+$$
+\alpha y_1 + \beta y_2 = (\alpha + \beta)y_1 = \gamma y_1
+$$
+
+we are missing a solution
+
+to recover the missing solution consider an ODE where the roots are very nearly but not the same, say $\lambda$ and $\lambda + \epsilon$
+
+our solutions become 
+
+$$
+y_1 = e^{\lambda x}, \quad \quad y_2 = e^{(\lambda + \epsilon)x}
+$$
+
+as $\epsilon \to 0$ $y_2 - y_1 = e^{(\lambda + \epsilon)x}  - e^{\lambda x} = 0$, this doesn't work so we can scale by the very large $\dfrac{1}{\epsilon}$
+
+$$
+\lim_{\epsilon \to 0} \dfrac{y_2 - y_1}{\epsilon} = \lim_{\epsilon \to 0} \dfrac{e^{(\lambda + \epsilon)x} - e^{\lambda x}}{\epsilon}
+$$
+
+we can factor out $e^{\lambda x}$
+
+$$
+\lim_{\epsilon \to 0} \; e^{\lambda x}\dfrac{e^{\epsilon x} - 1}{\epsilon}
+$$
+
+using L'Hôpital's rule
+
+$$
+\lim_{\epsilon \to 0} \; \dfrac{e^{\epsilon x} - 1}{\epsilon} = \lim_{\epsilon \to 0} \; \dfrac{xe^{\epsilon x}}{1} = x
+$$
+
+so our other solution is 
+
+$$
+y_2 = xe^{\lambda x}
+$$
+
+and thus our **General Solution** is
+
+$$
+y = \alpha e^{\lambda x} + \beta x e^{\lambda x}
+$$
+
+&nbsp;
+
+&nbsp;

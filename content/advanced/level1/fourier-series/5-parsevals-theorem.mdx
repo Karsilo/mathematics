@@ -1,0 +1,37 @@
+---
+title: 5. Parseval's Theorem
+description: -----
+---
+
+## Definition
+
+Used to evaluate infinite sums
+
+Length squared of a periodic function $f(x)$
+
+$$
+||f(x)||^2 = (f(x), f(x)) = \int_{-\pi}^{\pi} (f(x))^2 \; dx
+$$
+
+finding the inner product
+
+$$
+||f(x)||^2 = (\; 1 \cdot a_0 + \sum_{n=1}^{\infty} a_n \cos(nx) + \sum_{n=1}^{\infty} b_n \sin(nx), \; 1 \cdot a_0 + \sum_{n=1}^{\infty} a_n \cos(nx) + \sum_{n=1}^{\infty} b_n \sin(nx) \;)
+$$
+
+simplify
+
+$$
+||f(x)||^2 = a_0^2 (1, 1) + \sum_{n=1}^{\infty} a_n^2 (\cos(nx), \cos(nx)) + \sum_{n=1}^{\infty} b_n^2 (\sin(nx), \sin(nx))
+$$
+
+this comes out to
+
+$$
+||f(x)||^2 = 2\pi (a_0)^2 + \pi \sum_{n=1}^{\infty} (a_n)^2 + (b_n)^2
+$$
+
+
+&nbsp;
+
+&nbsp;

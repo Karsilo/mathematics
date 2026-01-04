@@ -1,0 +1,68 @@
+---
+title: 4. Even & Odd Functions
+description: -----
+---
+
+
+## Definition
+
+$$
+f(x) = \begin{cases}
+\text{even} & \text{if } \quad f(x) = f(-x) \\
+\text{odd} & \text{if } \quad f(x) = -f(-x)
+\end{cases}
+$$
+
+### Cases
+
+$$
+\begin{align*}
+\sin(nx) &= -\sin(-nx) \quad \quad \text{ODD} \\
+
+\cos(nx) &= \cos(-nx) \quad \quad \text{EVEN} \\
+
+1(x) &= 1(-x) = 1 \quad \quad \text{EVEN} \\
+
+x &= -(-x) \quad \quad \text{ODD} \\
+
+x\cos(nx) &= -(-x)\cos(-nx) \quad \text{ODD} \\
+
+x\sin(nx) &= -x\sin(-nx) \quad \text{EVEN} \\
+\end{align*}
+$$
+
+&nbsp;
+
+## Even Functions
+
+If $f(x)$ is EVEN
+
+$$
+\begin{align*}
+a_0 &= \dfrac{1}{2\pi} \int_{-\pi}^{\pi} f(x) \; dx &= \dfrac{1}{2\pi} \int_{-\pi}^{\pi} (EVEN) \; dx &= \dfrac{1}{\pi} \int_{0}^{\pi} f(x) \; dx \\
+\; \\
+a_n &= \dfrac{1}{\pi} \int_{-\pi}^{\pi} f(x)\cos(nx) \; dx &= \dfrac{1}{\pi} \int_{-\pi}^{\pi} (EVEN) \; dx &= \dfrac{2}{\pi} \int_{0}^{\pi} f(x)\cos(nx) \; dx \\
+\; \\
+b_n &= \dfrac{1}{\pi} \int_{-\pi}^{\pi} f(x)\sin(nx) \; dx &= \dfrac{1}{\pi} \int_{-\pi}^{\pi} (ODD) \; dx &= 0
+\end{align*}
+$$
+
+&nbsp;
+
+## Odd Functions
+
+If $f(x)$ is ODD
+
+$$
+\begin{align*}
+a_0 &= \dfrac{1}{2\pi} \int_{-\pi}^{\pi} f(x) \; dx = \dfrac{1}{2\pi} \int_{-\pi}^{\pi} (ODD) \; dx = 0 \\
+\; \\
+a_n &= \dfrac{1}{\pi} \int_{-\pi}^{\pi} f(x)\cos(nx) \; dx = \dfrac{1}{\pi} \int_{-\pi}^{\pi} (ODD) \; dx = 0 \\
+\; \\
+b_n &= \dfrac{1}{\pi} \int_{-\pi}^{\pi} f(x)\sin(nx) \; dx = \dfrac{1}{\pi} \int_{-\pi}^{\pi} (EVEN) \; dx = \dfrac{2}{\pi} \int_{0}^{\pi} f(x)\sin(nx) \; dx
+\end{align*}
+$$
+
+&nbsp;
+
+&nbsp;

@@ -1,0 +1,41 @@
+---
+title: 6. Periods Other than 2π
+description: -----
+---
+
+## Definition
+
+For function with periodicity $2L$ such that $f(x + 2L) = f(x)$ we define a function $g(x) = f(\dfrac{Lx}{\pi})$, this function $g(x)$ has a period of $2\pi$
+
+$$
+g(x + 2\pi) = f(\dfrac{L(x + 2\pi)}{\pi}) = f(\dfrac{Lx}{\pi} + 2L) = f(\dfrac{Lx}{\pi}) = g(x)
+$$
+
+the function $f(\dfrac{Lx}{\pi})$ has a period of $2\pi$ so
+
+$$
+f(\dfrac{Lx}{\pi}) = g(x) = a_0 + \sum_{n=1}^{\infty} a_n \cos(nx) + \sum_{n=1}^{\infty} b_n \sin(nx)
+$$
+
+we define $z = \dfrac{Lx}{\pi}$ so $x = \dfrac{z\pi}{L}$ and thus
+
+$$
+f(z) = a_0 + \sum_{n=1}^{\infty} a_n \cos(\dfrac{\pi n z}{L}) + \sum_{n=1}^{\infty} b_n \sin(\dfrac{\pi n z}{L})
+$$
+
+## Solving for Coefficients
+
+$$
+\begin{align*}
+a_n &= \dfrac{1}{\pi} \int_{-\pi}^{\pi} g(x)\cos(nx) \; dx \\
+\; \\
+&= \dfrac{1}{\pi} \int_{-L}^{L} f(z)\cos(nx) \dfrac{\pi}{L} \; dz \\
+\; \\
+&= \dfrac{1}{L} \int_{-L}^{L} f(z)\cos(nx) \; dz
+\end{align*}
+$$
+
+
+&nbsp;
+
+&nbsp;

@@ -1,0 +1,96 @@
+---
+title: 4. Determinants
+description: -----
+---
+
+## Definitions
+
+#### Determinant
+- A scalar value linked to a square matrix **(area scale factor)**
+- Only square matrices have determinants
+
+#### Singular Matrix
+- $\det(M) = 0 $
+- The determinant is zero
+
+&nbsp;
+
+## Derivations
+
+#### 2x2
+
+$$
+M = 
+\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}
+\quad \text{then} \quad \det(M) = 
+\begin{vmatrix}
+a & b \\
+c & d
+\end{vmatrix}
+= 
+ad - bc
+$$
+
+#### 3x3
+
+$$
+M = 
+\begin{bmatrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{bmatrix}
+
+$$
+
+then
+
+$$
+\det(M) = 
+\begin{vmatrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{vmatrix}
+= 
+a
+\begin{vmatrix}
+e & f \\
+h & i
+\end{vmatrix}
++ b
+\begin{vmatrix}
+f & d \\
+i & g
+\end{vmatrix}
++ c
+\begin{vmatrix}
+d & e \\
+g & h
+\end{vmatrix}
+$$
+
+simplifies to
+
+$$
+a(ei - fh) + b(fg - di) + c(dh - eg)
+$$
+
+or 
+
+$$
+aei + bfg + cdh - afh - bdi - ceg
+$$
+
+notice that this result is the same as multiplying the diagonals
+
+we sum the diagonals that go left to right
+
+then subtract the diagonals that go right to left
+
+&nbsp;
+
+&nbsp;

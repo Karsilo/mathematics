@@ -1,0 +1,55 @@
+---
+title: 5. Inverting 2x2 Matrices
+description: -----
+---
+
+## Definition
+
+The inverse of $M$ is denoted by $M^{-1}$
+
+$$
+MM^{-1} = M^{-1}M = I
+$$
+
+&nbsp;
+
+## Derivations
+
+Let $M = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$ then
+
+$$
+M^{-1} = \dfrac{1}{\det(M)} 
+\begin{bmatrix}
+d & -b \\
+-c & a
+\end{bmatrix}
+$$
+
+notice that since we divide by the determinant, a singular matrix cannot be inverted because its determinant is zero
+
+&nbsp;
+
+### Example
+
+Find the inverse of $M = \begin{bmatrix} 3 & 5 \\ 1 & 6 \end{bmatrix}$
+
+#### Answer
+
+$$
+\det(M) = (3 \times 6) - (5 \times 1) = 12
+$$
+
+then 
+
+$$
+M^{-1} = \dfrac{1}{12}
+\begin{bmatrix}
+6 & -5 \\
+-1 & 3
+\end{bmatrix}
+$$
+
+
+&nbsp;
+
+&nbsp;

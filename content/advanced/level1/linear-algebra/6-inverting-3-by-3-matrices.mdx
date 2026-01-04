@@ -1,0 +1,45 @@
+---
+title: 6. Inverting 3x3 Matrices
+description: -----
+---
+
+## Derivation
+
+Find the inverse of $M = \begin{bmatrix} a & b & c \\ d & e & f \\ g & h & i \end{bmatrix}$
+
+
+#### Step 1: Transpose
+
+$$ 
+\begin{bmatrix} 
+a & d & g \\ 
+b & e & h \\ 
+c & f & i 
+\end{bmatrix}
+$$
+
+#### Step 2: Co-Factors
+
+$$
+\begin{bmatrix} 
+\begin{vmatrix} e & h \\ f & i \end{vmatrix} & \begin{vmatrix} h & b \\ i & c \end{vmatrix} & \begin{vmatrix} b & e \\ c & f \end{vmatrix} \\[1em]
+\begin{vmatrix} f & i \\ d & g \end{vmatrix} & \begin{vmatrix} i & c \\ g & a \end{vmatrix} & \begin{vmatrix} c & f \\ a & d \end{vmatrix} \\[1em] 
+\begin{vmatrix} d & g \\ e & h \end{vmatrix} & \begin{vmatrix} g & a \\ h & b \end{vmatrix} & \begin{vmatrix} a & d \\ b & e \end{vmatrix} 
+\end{bmatrix}
+$$
+
+#### Step 3: $\dfrac{1}{\det(M)} \times \text{co-factors}$
+
+$$
+M^{-1} = \dfrac{1}{\det(M)}
+\begin{bmatrix} 
+ei - fh & hc - bi & bf - ec \\[1em]
+fg - id & ia - cg & cd - fa \\[1em] 
+dh - ge & gb - ah & ae - db 
+\end{bmatrix} 
+$$
+
+
+&nbsp;
+
+&nbsp;

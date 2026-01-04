@@ -1,6 +1,11 @@
 {
   "title": "Fourier Series",
   "pages": [
-    "introduction"
+    "1-introduction",
+    "2-inner-product",
+    "3-finding-coefficients",
+    "4-even-and-odd-functions",
+    "5-parsevals-theorem",
+    "6-periods-other-than-2pi"
   ]
 }

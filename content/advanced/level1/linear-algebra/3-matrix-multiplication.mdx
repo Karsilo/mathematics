@@ -1,0 +1,103 @@
+---
+title: 3. Matrix Multiplication
+description: -----
+---
+
+## Definition
+
+#### Associativity
+
+- $(a + b) + c = a + (b + c)$
+- $(a \times b) \times c = a \times (b \times c)$
+
+#### Distributivity
+- $a(b + c) = ab + ac$
+
+#### Commutativity 
+- $ab = ba$
+- This result is possible but not guaranteed
+
+#### Properties of Matrix Multiplication
+- Associative & Distributive
+- Not Cummutative
+
+
+## Derivations
+
+If we have two matrices with dimensions $r_1 \times c_1$ and $r_2 \times c_2$
+
+these two matrices can only be multiplied if $c_1=r_2$
+
+the resultant matrix will have dimensions $r_1 \times c_2$
+
+say we have two matrices $A$ and $B$ and we want to find $AB$
+
+$$
+\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}
+\begin{bmatrix}
+e & f \\
+g & h
+\end{bmatrix}
+= 
+\begin{bmatrix}
+ae +bg & af + bh \\
+ce + dg & cf + dh
+\end{bmatrix}
+$$
+
+**What have we just done?**
+
+**Step 1:** Take each item in the first row of $A$ and multiply it by its respective item in the first column of $B$
+
+**Step 2:** Add these together and this gives us the value at position $(1, 1)$
+
+**Step 3:** Take each item in the first row of $A$ and multiply it by its respective item in the second column of $B$
+
+**Step 4:** Add these together and this gives us the value at position $(1, 2)$
+
+**Step 5:** Repeat for the second row of $A$
+
+### Example
+
+Calculate the result of $AB$
+
+$$
+A = 
+\begin{bmatrix}
+3 & 6 & 1 \\
+0 & 7 & -3
+\end{bmatrix}
+, \quad \quad B =
+\begin{bmatrix}
+8 & -4 \\
+1 & 3 \\
+0 & -2
+\end{bmatrix}
+$$
+
+#### Answer
+
+$$
+AB = 
+\begin{bmatrix}
+(3 \times 8) + (6 \times 1) + (1 \times 0) & (3 \times -4) + (6 \times 3) + (1 \times -2) \\
+(0 \times 8) + (7 \times 1) + (-3 \times 0) & (0 \times -4) + (7 \times 3) + (-3 \times -2)
+\end{bmatrix}
+$$
+
+this simplifies to
+
+$$
+AB = 
+\begin{bmatrix}
+30 & 4 \\
+7 & 27
+\end{bmatrix}
+$$
+
+&nbsp;
+
+&nbsp;

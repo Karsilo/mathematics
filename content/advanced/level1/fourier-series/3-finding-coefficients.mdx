@@ -1,0 +1,55 @@
+---
+title: 3. Finding Coefficients
+description: -----
+---
+
+## Derivation
+
+$$
+f(x) = 1\cdot a_0 + \sum_{n=1}^{\infty} a_n \cos(nx) + \sum_{n=1}^{\infty} b_n \sin(nx)
+$$
+
+To find any coefficient $a_n$
+
+$$
+(f(x), \cos(nx)) = (\; 1 \cdot a_0 + \sum_{n=1}^{\infty} a_n \cos(nx) + \sum_{n=1}^{\infty} b_n \sin(nx), \; \cos(nx))
+$$
+
+this gives
+
+$$
+a_0(1, \cos(nx)) + \sum_{n=1}^{\infty} a_n(\cos(nx), \cos(nx)) + \sum_{n=1}^{\infty} b_n(\sin(nx), \cos(nx))
+$$
+
+we can simplify this 
+
+$$
+a_0 \cdot 0 + a_n \pi + b_n \cdot 0 = a_n \pi
+$$
+
+therefore
+
+$$
+a_n = \dfrac{1}{\pi}\int_{-\pi}^{\pi} f(x) \cos(nx) \; dx
+$$
+
+
+## Key Equations
+
+For any coefficient
+
+$$
+a_0 = \dfrac{1}{2\pi}\int_{-\pi}^{\pi} f(x) \; dx
+$$
+&nbsp;
+$$
+a_n = \dfrac{1}{\pi}\int_{-\pi}^{\pi} f(x) \cos(nx) \; dx
+$$
+&nbsp;
+$$
+b_n = \dfrac{1}{\pi}\int_{-\pi}^{\pi} f(x) \sin(nx) \; dx
+$$
+
+&nbsp;
+
+&nbsp;

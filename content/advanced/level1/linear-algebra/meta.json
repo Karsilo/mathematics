@@ -1,0 +1,12 @@
+{
+  "title": "Linear Algebra",
+  "pages": [
+    "1-introduction",
+    "2-matrices",
+    "3-matrix-multiplication",
+    "4-determinants",
+    "5-inverting-2-by-2-matrices",
+    "6-inverting-3-by-3-matrices",
+    "7-linear-transformations"
+  ]
+}

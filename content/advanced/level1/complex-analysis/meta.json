@@ -1,6 +1,8 @@
 {
   "title": "Complex Analysis",
   "pages": [
-    "introduction"
+    "1-introduction",
+    "2-partial-derivatives",
+    "3-cauchy-riemann-equations"
   ]
 }

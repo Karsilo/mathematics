@@ -3,16 +3,81 @@ title: 1. Introduction
 description: An ordinary differential equation (ODE) is an equation that relates a function of one variable to its derivatives with respect to that variable.
 ---
 
-#### Example 1 (Simple first order ODE)
 
-<p style={{ marginBottom: '0.5em' }}></p>
+### Autonomous ODE
 
-Solve $ \quad \dfrac{dy}{dx} + f(x)y = g(x)$
+$$
+\dfrac{dy}{dx} = f(y)
+$$
+
+when the right hand side only depends on $y$
+
+#### Example
+
+$$
+\dfrac{dy}{dx} - 2y = 0
+$$
 
 &nbsp;
 
-#### Example 2 (Bernoulli ODE)
+### Non-Autonomous ODE
+
+$$
+\dfrac{dy}{dx} = f(x, y)
+$$
+
+when the right hand side depends on $x$ and $y$
+
+#### Example
+
+$$
+\dfrac{dy}{dx} - 2xy = 3x
+$$
+
+
+&nbsp;
+
+### Simple first order ODE
 
 <p style={{ marginBottom: '0.5em' }}></p>
 
-Solve $ \quad \dfrac{dy}{dx} + f(x)y = g(x)y^n \quad $ where $ \quad n \neq 0, 1 $
+$$
+\quad \dfrac{dy}{dx} + f(x)y = g(x)
+$$
+
+&nbsp;
+
+### Bernoulli ODE
+
+<p style={{ marginBottom: '0.5em' }}></p>
+
+$$
+\quad \dfrac{dy}{dx} + f(x)y = g(x)y^n \quad \text{where} \quad n \neq 0, 1 
+$$
+
+&nbsp;
+
+### 2nd Order Homogenous ODE
+
+<p style={{ marginBottom: '0.5em' }}></p>
+
+
+$$
+\quad a\dfrac{d^2y}{dx^2} + b\dfrac{dy}{dx} + cy = 0
+$$
+
+&nbsp;
+
+### 2nd Order Inhomogenous ODE
+
+<p style={{ marginBottom: '0.5em' }}></p>
+
+
+$$
+\quad a\dfrac{d^2y}{dx^2} + b\dfrac{dy}{dx} + cy = f(x)
+$$
+
+
+&nbsp;
+
+&nbsp;

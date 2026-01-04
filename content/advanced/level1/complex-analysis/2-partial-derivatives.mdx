@@ -1,0 +1,36 @@
+---
+title: 2. Partial Derivatives
+description: -----
+---
+
+## Definition
+
+The derivative of a function with respect to one variable, holding the other variables constant
+
+The partial derivative with respect to $x$ of a function $f(x, y)$ at some point $(x_0, y_0) \in \R$ is defined as
+
+
+$$
+\dfrac{\delta f(x, y)}{\delta x} \bigg|_{(x_0, y_0)} = \lim_{h \to 0} \dfrac{f(x_0 + h, y_0) - f(x_0, y_0)}{h}
+$$
+
+provided the limit exists, and the derivative w.r.t $y$ is
+
+$$
+\dfrac{\delta f(x, y)}{\delta y} \bigg|_{(x_0, y_0)} = \lim_{h \to 0} \dfrac{f(x_0, y_0 + h) - f(x_0, y_0)}{h}
+$$
+
+&nbsp;
+
+## Clairaut Theorem
+
+For any 'nice' function $f: \R^2 \to \R$ and any point $(x_0, y_0) \to \R^2$
+
+$$
+\dfrac{\delta f(x, y)}{\delta y} \bigg|_{(x_0, y_0)} = \dfrac{\delta f(x, y)}{\delta x} \bigg|_{(x_0, y_0)}
+$$
+
+
+&nbsp;
+
+&nbsp;
